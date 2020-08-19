@@ -1,0 +1,3 @@
+language=Spanish
+greeting=Hola
+salutation=Adios

@@ -1,0 +1,44 @@
+<people>
+    <person>
+        <firstname>
+            Scott
+        </firstname>
+        <lastname>
+            Blanch
+        </lastname>
+        <alias>
+            Software Guy
+        </alias>
+        <occupation>
+            Software Developer
+        </occupation>
+    </person>
+    <person>
+        <firstname>
+            Tony
+        </firstname>
+        <lastname>
+            Stark
+        </lastname>
+        <alias>
+            Ironman
+        </alias>
+        <occupation>
+            Avenger
+        </occupation>
+    </person>
+    <person>
+        <firstname>
+            Natasha
+        </firstname>
+        <lastname>
+            Romanoff
+        </lastname>
+        <alias>
+            Black Widow
+        </alias>
+        <occupation>
+            Avenger
+        </occupation>
+    </person>
+</people>

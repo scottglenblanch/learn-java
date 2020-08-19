@@ -1,0 +1,41 @@
+# learn-java
+
+- [Lesson 1](./lesson1)
+  - Hello World on Terminal
+  - Topics
+    - Running Java program in terminal
+- [Lesson 2](./lesson2)
+  - Taboo/Euphemism Program on Terminal
+- [Lesson 3](./lesson3)
+  - Taboo/Euphemism Program on Terminal
+  - Topics
+    - Map
+        - `java.util.Map`
+    - HashMap
+        - A type of Map
+    - Object Instances from Classes
+        - instantiate object via `new SomeClassName()`
+            - this calls the constructor defined in class `SomeClassName`
+        - 
+- [Lesson 4](./lesson4)
+  - Read from a File
+   - Topics
+        - maven
+            - maven lifecycle
+            - maven source code folder structure
+            - maven `groupId`, `artifactId`, and version
+- [Lesson 5](./lesson5)
+  - Read from annotation
+  - Topics
+    - custom annotation
+    - reading from custom annotation via reflection
+- [Lesson 6](./lesson6)
+- [Lesson 7](./lesson7)
+    - will output stuff based on language input
+- [Lesson 8](./lesson8)
+    - reads and uses xml data
+- [Lesson 9](./lesson9)
+    - creating custom server framework
+- [Lesson 10](./lesson10)  
+    - creating custom server framework
+    - using config files for server

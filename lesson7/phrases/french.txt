@@ -1,0 +1,3 @@
+language=French
+greeting=Bon Jour
+salutation=Adieu

@@ -1,0 +1,3 @@
+language=Chinese
+greeting=你好
+salutation=再见
