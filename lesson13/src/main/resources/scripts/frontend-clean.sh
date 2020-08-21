@@ -16,16 +16,18 @@ set_vars() {
   FRONT_END_APP_RESOURCES_BUILD_DIR="${RESOURCES_DIR}/public"
 }
 
-build_frontend() {
-  cd "${FRONT_END_APP_DIR}"
-
-  yarn build
-}
-
 copy_frontend_build_to_resources_directory() {
   cp -R "${FRONT_END_APP_BUILD_DIR}" "${FRONT_END_APP_RESOURCES_BUILD_DIR}"
 }
 
+delete_frontend_build_in_frontend_app_dir() {
+  rm -rf "${FRONT_END_APP_BUILD_DIR}"
+}
+
+delete_frontend_build_in_resources_dir() {
+  rm -rf "${FRONT_END_APP_RESOURCES_BUILD_DIR}"
+}
+
 set_vars
-build_frontend
-copy_frontend_build_to_resources_directory
+delete_frontend_build_in_frontend_app_dir
+delete_frontend_build_in_resources_dir

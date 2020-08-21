@@ -16,6 +16,12 @@
 
 	<properties>
 		<java.version>14</java.version>
+		<path.to.script.resources.frontend.build>
+			${project.basedir}/src/main/resources/scripts/frontend-build.sh
+		</path.to.script.resources.frontend.build>
+		<path.to.script.resources.frontend.clean>
+			${project.basedir}/src/main/resources/scripts/frontend-clean.sh
+		</path.to.script.resources.frontend.clean>
 	</properties>
 
 	<dependencies>
@@ -42,16 +48,32 @@
 				<version>1.6.0</version>
 				<executions>
 					<execution>
-						<id>my-exec</id>
+						<id>frontend-clean</id>
+						<phase>clean</phase>
+						<goals>
+							<goal>exec</goal>
+						</goals>
+						<configuration>
+							<executable>bash</executable>
+							<commandlineArgs>
+								${path.to.script.resources.frontend.clean}
+							</commandlineArgs>
+						</configuration>
+					</execution>
+					<execution>
+						<id>frontend-build</id>
 						<phase>process-resources</phase>
 						<goals>
 							<goal>exec</goal>
 						</goals>
+						<configuration>
+							<executable>bash</executable>
+							<commandlineArgs>
+								${path.to.script.resources.frontend.build}
+							</commandlineArgs>
+						</configuration>
 					</execution>
 				</executions>
-				<configuration>
-					<executable>${project.basedir}/src/main/resources/scripts/frontend-build.sh</executable>
-				</configuration>
 			</plugin>
 		</plugins>
 	</build>
