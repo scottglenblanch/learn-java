@@ -39,3 +39,17 @@
 - [Lesson 10](./lesson10)  
     - creating custom server framework
     - using config files for server
+- [Lesson 11](./lesson11)
+    - Maven
+    - Spring Boot
+    - Rest API endpoint  
+- [Lesson 12](./lesson12)  
+    - Maven
+    - Spring Boot
+    - Static Files
+- [Lesson 13](./lesson13)
+    - Maven
+    - Spring Boot
+    - React app as part of Spring Boot project
+    - Maven Executing Command Line Bash Scripts
+    - Custom Bash Scripts to Run Yarn Frontend    

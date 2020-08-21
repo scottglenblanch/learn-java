@@ -4,10 +4,8 @@
 - Maven
 - Spring Boot
 - React app as part of Spring Boot project
-- Maven Executing Command Line
-- Custom Bash Script 
-    - Builds React App Using Yarn
-    - 
+- Maven Executing Command Line Bash Scripts
+- Custom Bash Scripts to Run Yarn Frontend
 
 ## Dependencies
 - Java 14
