@@ -1,27 +1,37 @@
-# Lesson 12
+# Lesson 13
 
 ## Topics
 - Maven
 - Spring Boot
-- Static Files
+- React app as part of Spring Boot project
+- Maven Executing Command Line
+- Custom Bash Script 
+    - Builds React App Using Yarn
+    - 
+
+## Dependencies
+- Java 14
+- Maven
+- Node 14
+- Yarn 1.22.4
+- Bash 5.0.18
 
 ## Run
 
 ### Start
 
 ```
-<lesson 12 root directory>/runApp.sh
+<lesson 11 root directory>/runApp.sh
 ```
 
 or
 
 ```
-<lesson 12 root directory>/runApp.sh --port <some port>
+<lesson 11 root directory>/runApp.sh --port <some port>
 ```
 
 ### Output
 Will mention which port the app is running on 
-
 
 ## Interactive with Web App
 
