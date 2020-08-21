@@ -25,7 +25,6 @@ Will mention which port the app is running on
 
 ## Interactive with Web App
 
-Go to [http://localhost:8000](http://localhost:8000)
+Go to `http://localhost:<port decided on>`
 
-If you chose to use a different port use that instead of the `8000` in the above address
-
+Default port is `8080`
