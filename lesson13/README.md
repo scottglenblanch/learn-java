@@ -21,17 +21,20 @@
 ### Start
 
 ```
-<lesson 11 root directory>/runApp.sh
+<lesson 13 root directory>/runApp.sh
 ```
 
 or
 
 ```
-<lesson 11 root directory>/runApp.sh --port <some port>
+<lesson 13 root directory>/runApp.sh --port <some port>
 ```
 
 ### Output
 Will mention which port the app is running on 
+
+### Tests
+- `mvn test` goal runs Junit as well as Frontend Unit tests
 
 ## Interactive with Web App
 
@@ -41,9 +44,10 @@ Default port is `8080`
 
 ## Code Explained
 
-This project only serves up static files
-- `src/main/resources`
-    - `index.html`
-    - `index.css`
-    
+This project has both Java backend and React app frontend
+
+### Frontend
+- located at `<root>/src/frontend`
+- `mvn compile` builds frontend directory at `<roo>/src/frontend/hello-world/build` and copies it to `<root>/src/main/resources/public`
+- `mvn test` runs `yarn test` which then runs `react-scripts test --watchAll=false`    
     

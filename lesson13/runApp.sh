@@ -9,6 +9,10 @@ create_jar() {
   mvn install
 }
 
+open_browser() {
+  open "http://127.0.0.1:${PORT}"
+}
+
 run_jar() {
   echo "
 
@@ -40,4 +44,5 @@ set_vars() {
 
 set_vars "$@"
 create_jar
+open_browser
 run_jar

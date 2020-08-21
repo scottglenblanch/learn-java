@@ -22,6 +22,9 @@
 		<path.to.script.resources.frontend.clean>
 			${project.basedir}/src/main/resources/scripts/frontend-clean.sh
 		</path.to.script.resources.frontend.clean>
+		<path.to.script.resources.frontend.test>
+			${project.basedir}/src/main/resources/scripts/frontend-test.sh
+		</path.to.script.resources.frontend.test>
 	</properties>
 
 	<dependencies>
@@ -62,7 +65,7 @@
 					</execution>
 					<execution>
 						<id>frontend-build</id>
-						<phase>process-resources</phase>
+						<phase>compile</phase>
 						<goals>
 							<goal>exec</goal>
 						</goals>
@@ -70,6 +73,19 @@
 							<executable>bash</executable>
 							<commandlineArgs>
 								${path.to.script.resources.frontend.build}
+							</commandlineArgs>
+						</configuration>
+					</execution>
+					<execution>
+						<id>frontend-test</id>
+						<phase>test</phase>
+						<goals>
+							<goal>exec</goal>
+						</goals>
+						<configuration>
+							<executable>bash</executable>
+							<commandlineArgs>
+								${path.to.script.resources.frontend.test}
 							</commandlineArgs>
 						</configuration>
 					</execution>
